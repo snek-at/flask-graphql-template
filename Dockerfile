@@ -7,7 +7,7 @@ FROM python:3.6-alpine
 
 WORKDIR /usr/src/app
 
-COPY requirements/base.txt /usr/src/app/requirements.txt
+COPY requirements.txt /usr/src/app
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /usr/src/app
